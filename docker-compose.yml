@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  ### AMQP ###
+  rabbit:
+    container_name: rabbitmq
+    image: rabbitmq:3.8-management
+    ports:
+        - "5672:5672"
+        - "15672:15672"
+    restart: always
